@@ -1,9 +1,23 @@
+@import "./font.css";
+@import "./assets/CSS/Home/Section01.css";
+@import "./assets/CSS/Home/Section02.css";
+@import "./assets/CSS/Home/Section03.css";
+@import "./assets/CSS/Home/Section04.css";
+
+
 ::before,
 ::after,
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
 }
 
 .home {
@@ -17,68 +31,12 @@
     background-repeat: no-repeat;
 }
 
-.home-section-1 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-    color: white;
-    font-family: 'ExtraBold';
+.extra-bold-italic {
+    font: 700 70px ExtraBoldItalic;
 }
 
-.heading-container {
-    width: 80vw;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column-reverse;
-}
-
-.heading-bottom {
-    height: 15vh;
-    width: 30vw;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.heading-button {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 15px 15px;
-    gap: 5px;
-    background: linear-gradient(99.46deg, #9DFE00 -10.9%, #14D9E6 97.14%);
-    border-radius: 50px;
-    font-weight: 600;
-}
-
-.heading-bottom-description {
-    height: 39px;
-    width: 245px;
-    font-family: 'TT Travels';
-    font-style: normal;
-    font-weight: 600;
-    text-align: center;
-    font-size: 11px;
-    /* Primary/Blue */
-    color: #14D9E6;
-}
-
-.heading-button a {
-    text-decoration: none;
-    color: #FBF8F3;
-}
-.bubble {
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 350px;
-    top: 70px;
-    filter: blur(0.8px); 
-    transform: rotate(-5deg);
-}
-.heading-title span {
-    margin-right: 10px;
+.extra-bold {
+    font: 700 70px ExtraBold;
 }
 
 .inline {
@@ -87,34 +45,4 @@
 
 .white {
     color: white;
-}
-
-.extra-bold {
-    font-weight: 700;
-    font-style: italic;
-    font-size: 70px;
-}
-
-.gradient {
-    background: linear-gradient(to right, #14D9E5, #9DFE00);
-    background-clip: text;
-    color: transparent;
-}
-
-.normal {
-    font-weight: 700;
-    font-style: normal;
-    font-size: 70px;
-}
-.gun {
-position: absolute;
-width: 100px;
-height: 150px;
-right: 330px;
-top: 189px;
-background: linear-gradient(99.46deg, #9DFE00 -10.9%, #14D9E6 97.14%);
-border-radius: 40px;
-transform: rotate(25.82deg);
-display: flex;
-align-items: baseline;
 }
