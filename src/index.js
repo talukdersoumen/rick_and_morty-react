@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-
+import Casts from "../src/Pages/Casts";
+import CastDetails from "../src/Pages/CastDetails";
+import './App.css';
 
 import {
     createBrowserRouter,
@@ -13,10 +15,14 @@ import {
       path: "/",
       element: <App/>
     },
-    // {
-    //     path: "/",
-    //     element: <div>Hello world!</div>,
-    //   },
+    {
+        path: "casts",
+        element: <Casts />
+      },
+      {
+        path: "castdetails",
+        element: <CastDetails />
+      },
   ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

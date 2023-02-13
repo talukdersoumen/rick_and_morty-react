@@ -1,9 +1,10 @@
-import React from "react";
+import React from "react"
+import { Link } from "react-router-dom";
 
 const Logo = () => {
   return (
     <div className="logo">
-      <img src="./images/Logo.png" alt="logo" height={"48px"} width={"227px"} />
+      <Link to="/"><img src="./images/Logo.png" alt="logo" height={"48px"} width={"227px"} /></Link>
     </div>
   );
 };

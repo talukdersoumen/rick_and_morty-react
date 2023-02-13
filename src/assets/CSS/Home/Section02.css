@@ -27,10 +27,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
     padding: 15px 24px;
     font-family: 'Medium';
     font-size: 13px;
+}
+
+.cast-carousal-header-right a {
+    color: white;
+    text-decoration: none;
 }
 
 .cast-carousal {
@@ -47,4 +51,23 @@
     backdrop-filter: blur(1px);
     border-radius: 12.0933px;
     border: 1px solid #9dfe0098;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: bisque;
+}
+
+.character-image {
+    height: 90%;
+    width: auto;
+}
+
+.character-name {
+    font-family: 'Regular';
+    font-size: 0.8rem;
+}
+
+.cast-carousal a {
+    color: white;
+    text-decoration: none;
 }

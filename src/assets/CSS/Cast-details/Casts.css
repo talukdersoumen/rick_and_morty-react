@@ -1,0 +1,55 @@
+::before,
+::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Casts-body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #191D29;
+  background-image: url("/public/images/Cast/Background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container-title {
+  color: #14D9E5;
+  font-family: 'Bold';
+  font-weight: 700;
+  font-size: 2rem;
+  margin-left: 40px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 16px;
+  margin: 30px 40px;
+}
+
+.character-card {
+  height: 140px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(1px);
+  border-radius: 12.0933px;
+  color: bisque;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 5px;
+}
+
+.character-card-img {
+  height: 90%;
+  width: auto;
+}
+
+.character-name {
+  font-family: 'Regular';
+  font-size: 0.7rem;
+}
