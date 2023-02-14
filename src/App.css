@@ -1,8 +1,8 @@
 @import "./font.css";
 @import "./assets/CSS/Home/Section01.css";
-@import "./assets/CSS/Home/Section02.css";
-@import "./assets/CSS/Home/Section03.css";
-@import "./assets/CSS/Home/Section04.css";
+@import "./assets/CSS/Home/CastCarousal.css";
+@import "./assets/CSS/Home/EpisodeCarousal.css";
+@import "./assets/CSS/Home/LocationCarousal.css";
 @import './assets/CSS/Cast-details/Casts.css';
 @import './assets/CSS/Cast-details/CastDetails.css';
 
@@ -22,10 +22,14 @@
     padding-top: 20px;
 }
 
+.logo:hover {
+    transform: scale(1.1);
+}
+
 .home {
     position: relative;
     width: 100vw;
-    height: 184vh;
+    height: 200vh;
     background-color: #191D29;
     background-image: url("/public/images/Home/Background/Background.png");
     background-size: contain;

@@ -1,82 +1,95 @@
 @font-face {
     font-family: "Black";
     src: local("TTTravels-Black"),
-    url("./fonts/TTTravels-Black.ttf") format("truetype");
+        url("./fonts/TTTravels-Black.ttf") format("truetype");
 }
+
 @font-face {
     font-family: "BlackItalic";
     src: local("TTTravels-BlackItalic"),
-    url("./fonts/TTTravels-BlackItalic.ttf") format("truetype");
+        url("./fonts/TTTravels-BlackItalic.ttf") format("truetype");
 }
+
 @font-face {
     font-family: "Bold";
     src: local("TTTravels-Bold"),
-    url("./fonts/TTTravels-DemiBold.ttf") format("truetype");
+        url("./fonts/TTTravels-DemiBold.ttf") format("truetype");
 }
+
 @font-face {
     font-family: "BoldItalic";
     src: local("TTTravels-BoldItalic"),
-    url("./fonts/TTTravels-BoldItalic.ttf") format("truetype");
+        url("./fonts/TTTravels-BoldItalic.ttf") format("truetype");
 }
+
 @font-face {
     font-family: "ExtraBold";
-    src: local("TTTravels-ExtraBold"), 
-    url("./fonts/TTTravels-ExtraBold.ttf") format("truetype");
+    src: local("TTTravels-ExtraBold"),
+        url("./fonts/TTTravels-ExtraBold.ttf") format("truetype");
 }
+
 @font-face {
     font-family: "ExtraBoldItalic";
     src: local("TTTravels-ExtraBoldItalic"),
-    url("./fonts/TTTravels-ExtraBoldItalic.ttf") format("truetype");
+        url("./fonts/TTTravels-ExtraBoldItalic.ttf") format("truetype");
 }
+
 @font-face {
     font-family: "ExtraLight";
-    src: local("TTTravels-ExtraLight"), 
-    url("./fonts/TTTravels-ExtraLight.ttf") format("truetype");
+    src: local("TTTravels-ExtraLight"),
+        url("./fonts/TTTravels-ExtraLight.ttf") format("truetype");
 }
+
 @font-face {
     font-family: "ExtraLightItalic";
-    src: local("TTTravels-ExtraLightItalic"), 
-    url("./fonts/TTTravels-ExtraLightItalic.ttf") format("truetype");
+    src: local("TTTravels-ExtraLightItalic"),
+        url("./fonts/TTTravels-ExtraLightItalic.ttf") format("truetype");
 }
+
 @font-face {
     font-family: "Italic";
-    src: local("TTTravels-Italic"), 
-    url("./fonts/TTTravels-Italic.ttf") format("truetype");
+    src: local("TTTravels-Italic"),
+        url("./fonts/TTTravels-Italic.ttf") format("truetype");
 }
+
 @font-face {
     font-family: "Light";
-    src: local("TTTravels-Light"), 
-    url("./fonts/TTTravels-Light.ttf") format("truetype");
+    src: local("TTTravels-Light"),
+        url("./fonts/TTTravels-Light.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "LightItalic";
-    src: local("TTTravels-LightItalic"), 
-    url("./fonts/TTTravels-LightItalic.ttf") format("truetype");
+    src: local("TTTravels-LightItalic"),
+        url("./fonts/TTTravels-LightItalic.ttf") format("truetype");
 }
+
 @font-face {
     font-family: "Medium";
-    src: local("TTTravels-Medium"), 
-    url("./fonts/TTTravels-Medium.ttf") format("truetype");
+    src: local("TTTravels-Medium"),
+        url("./fonts/TTTravels-Medium.ttf") format("truetype");
 }
+
 @font-face {
     font-family: "MediumItalic";
-    src: local("TTTravels-MediumItalic") ,
-    url("./fonts/TTTravels-MediumItalic.ttf") format("truetype");
+    src: local("TTTravels-MediumItalic"),
+        url("./fonts/TTTravels-MediumItalic.ttf") format("truetype");
 }
+
 @font-face {
     font-family: "Regular";
     src: local("TTTravels-Regular"),
-    url("./fonts/TTTravels-Regular.ttf") format("truetype");
-}
-@font-face {
-    font-family: "Thin";
-    src: local("TTTravels-Thin"), 
-    url("./fonts/TTTravels-Thin.ttf") format("truetype");
-}
-@font-face {
-    font-family: "ThinItalic";
-    src: local("TTTravels-ThinItalic"), 
-    url("./fonts/TTTravels-ThinItalic.ttf") format("truetype");
+        url("./fonts/TTTravels-Regular.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "Thin";
+    src: local("TTTravels-Thin"),
+        url("./fonts/TTTravels-Thin.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "ThinItalic";
+    src: local("TTTravels-ThinItalic"),
+        url("./fonts/TTTravels-ThinItalic.ttf") format("truetype");
+}

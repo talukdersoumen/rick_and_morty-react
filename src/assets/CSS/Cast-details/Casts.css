@@ -9,7 +9,7 @@
 .Casts-body {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 160vh;
   background-color: #191D29;
   background-image: url("/public/images/Cast/Background.png");
   background-size: cover;
@@ -28,28 +28,31 @@
 .grid-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 16px;
+  grid-gap: 30px;
   margin: 30px 40px;
 }
 
 .character-card {
-  height: 140px;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(1px);
   border-radius: 12.0933px;
   color: bisque;
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 10px 0;
   gap: 5px;
+  align-items: center;
 }
 
-.character-card-img {
-  height: 90%;
-  width: auto;
+.character-card-img img {
+  background-size: cover;
+  background-position: center;
+  height: 130px;
+  width: 160px;
 }
 
 .character-name {
   font-family: 'Regular';
-  font-size: 0.7rem;
+  font-size: 0.8rem;
+  font-weight: 500;
 }

@@ -93,7 +93,7 @@
     border: 1px solid;
     border-image: linear-gradient(99.46deg, #9DFE00 10.9%, #14D9E6 97.14%) 1 stretch;
 }
- 
+
 .cast-episodes {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(1px);
@@ -103,7 +103,7 @@
     border-image: linear-gradient(99.46deg, #9DFE00 10.9%, #14D9E6 97.14%) 1 stretch;
 }
 
-.section-desc{ 
+.section-desc {
     display: flex;
     flex-direction: column;
     gap: 2px;
@@ -115,12 +115,14 @@
     font-size: 0.7rem;
     font-weight: 500;
 }
+
 .status {
     font-family: 'Regular';
     font-size: 1.2rem;
     font-weight: 700;
 }
-.status ul{
+
+.status ul {
     padding: 20px 40px;
     overflow-y: hidden;
 }

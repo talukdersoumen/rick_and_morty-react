@@ -1,6 +1,6 @@
 .locations-carousal-container {
-    height: 20vh;
-    width: 90vw;
+    height: 30vh;
+    width: 95vw;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -9,18 +9,19 @@
 
 .locations-carousal-header {
     height: 2vh;
-    width: 90vw;
+    width: 93vw;
     color: white;
     padding: 10px 5px;
     font-family: 'Medium';
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .locations-carousal {
     display: flex;
     gap: 10px;
     height: 100%;
-    width: 90vw;
+    width: 93vw;
+    overflow-x: scroll;
 }
 
 .locations-container {
@@ -36,7 +37,15 @@
     color: white;
     padding: 20px;
     font-family: 'Regular';
+    box-sizing: border-box;
 }
+
+.location-id {
+    font-size: 0.8rem;
+}
+
 .location-name {
     font-size: 1.3rem;
+    height: 60px;
+    width: 170px;
 }

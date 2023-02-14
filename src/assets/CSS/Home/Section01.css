@@ -30,6 +30,10 @@
     padding: 10px 15px;
 }
 
+.heading-button:hover {
+    transform: scale(1.1);
+}
+
 .heading-button a {
     text-decoration: none;
     color: #FBF8F3;

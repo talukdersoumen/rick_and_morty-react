@@ -11,6 +11,7 @@ const Section01 = () => {
               href="https://youtu.be/KQ9Cgdsa9tc"
               target="_blank"
               rel="noopener noreferrer"
+              title="Watch Trailer"
             >
               Watch Now
             </a>

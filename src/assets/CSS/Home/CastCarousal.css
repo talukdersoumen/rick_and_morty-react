@@ -1,15 +1,15 @@
 .cast-carousal-container {
-    height: 35vh;
-    width: 90vw;
+    height: 38vh;
+    width: 95vw;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 35px;
     margin: 40px 0 0 45px;
 }
 
 .cast-carousal-header {
     height: 2vh;
-    width: 90vw;
+    width: 93vw;
     display: flex;
     justify-content: space-between;
 }
@@ -18,7 +18,7 @@
     color: white;
     padding: 10px 5px;
     font-family: 'Medium';
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .cast-carousal-header-right {
@@ -32,6 +32,12 @@
     font-size: 13px;
 }
 
+.cast-carousal-header-right:hover {
+    transform: scale(1.1);
+    background-color: #161a25;
+    ;
+}
+
 .cast-carousal-header-right a {
     color: white;
     text-decoration: none;
@@ -39,13 +45,15 @@
 
 .cast-carousal {
     display: flex;
-    gap: 10px;
+    flex-direction: row;
+    gap: 15px;
     height: 100%;
-    width: 90vw;
+    width: 93vw;
+    overflow-x: scroll;
 }
 
 .character-container {
-    width: 13vw;
+    width: 11vw;
     height: 100%;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(1px);
@@ -55,11 +63,17 @@
     flex-direction: column;
     padding: 10px;
     color: bisque;
+    gap: 5px;
 }
 
 .character-image {
     height: 90%;
-    width: auto;
+    width: 100%;
+}
+
+.character-image img {
+    height: 120px;
+    width: 120px;
 }
 
 .character-name {

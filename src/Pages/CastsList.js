@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Logo from "../components/Logo";
-import CastDetailsInfo from "../components/CastDetailsInfo";
+import CharacterCards from "../components/CharacterCards";
 
-function CastDetails() {
+function Casts() {
   let [pageNumber] = useState(1);
   let [fetchedData, updateFetchedData] = useState({});
 
@@ -16,13 +16,13 @@ function CastDetails() {
   }, [api]);
 
   return (
-    <div className="CastDetails-body">
+    <div className="Casts-body">
       <Logo />
       {fetchedData.results ? (
-        <CastDetailsInfo results={fetchedData.results} />
+        <CharacterCards results={fetchedData.results} />
       ) : null}
     </div>
   );
 }
 
-export default CastDetails;
+export default Casts;

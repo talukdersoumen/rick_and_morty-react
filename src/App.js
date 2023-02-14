@@ -18,21 +18,12 @@ import "./fonts/TTTravels-MediumItalic.ttf";
 import "./fonts/TTTravels-Regular.ttf";
 import "./fonts/TTTravels-Thin.ttf";
 import "./fonts/TTTravels-ThinItalic.ttf";
-import Logo from "./components/Logo.js"
-import Section01 from "./components/Home/Section01";
-import Section02 from "./components/Home/Section02";
-import Section03 from "./components/Home/Section03";
-import Section04 from "./components/Home/Section04";
-
+import Home from "./Pages/Home";
 function App() {
   return (
-    <div className="home">
-      <Logo />
-      <Section01 />
-      <Section02 />
-      <Section03 />
-      <Section04 />
-    </div>
+    <>
+      <Home />
+    </>
   );
 }
 export default App;
