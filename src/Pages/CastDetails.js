@@ -1,26 +1,26 @@
 import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import Logo from "../components/Logo";
 import CastDetailsInfo from "../components/CastDetailsInfo";
 
 function CastDetails() {
-  let [pageNumber] = useState(1);
-  let [fetchedData, updateFetchedData] = useState({});
-
-  let api = `https://rickandmortyapi.com/api/character?page=${pageNumber}`;
+  const { id } = useParams();
+  const [castData, setCastData] = useState(null);
 
   useEffect(() => {
-    (async function () {
-      let data = await fetch(api).then((res) => res.json());
-      updateFetchedData(data);
-    })();
-  }, [api]);
+    async function fetchCastData() {
+      const response = await fetch(`https://rickandmortyapi.com/api/character/${id}`);
+      const data = await response.json();
+      setCastData(data);
+    }
+
+    fetchCastData();
+  }, [id]);
 
   return (
     <div className="CastDetails-body">
       <Logo />
-      {fetchedData.results ? (
-        <CastDetailsInfo results={fetchedData.results} />
-      ) : null}
+      {castData ? <CastDetailsInfo results ={castData} /> : null}
     </div>
   );
 }

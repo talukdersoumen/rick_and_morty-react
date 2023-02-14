@@ -52,6 +52,20 @@
     overflow-x: scroll;
 }
 
+.cast-carousal::-webkit-scrollbar{
+    height: 5px;
+}
+.cast-carousal::-webkit-scrollbar-thumb {
+    background-color: rgb(71, 71, 71);
+    border-radius: 50px;
+}
+.cast-carousal::-webkit-scrollbar-track {
+    background-color: #202635;
+}
+.cast-carousal::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(117, 116, 116);
+}
+
 .character-container {
     width: 11vw;
     height: 100%;
@@ -62,8 +76,12 @@
     display: flex;
     flex-direction: column;
     padding: 10px;
-    color: bisque;
+    color: white;
     gap: 5px;
+}
+
+.character-container:hover {
+    color: rgb(252, 215, 170);
 }
 
 .character-image {

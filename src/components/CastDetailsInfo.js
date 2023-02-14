@@ -1,69 +1,50 @@
 import React from "react";
 
 const CastDetailsInfo = ({ results }) => {
-  const castImage = results.filter((castImg) => {
-    let { id, image, name } = castImg;
-    return (
-      <div key={id} className="cast">
-        <div className="cast-name">{name}</div>
-        <div className="cast-image">{image}</div>
+  const castImage = (
+    <div className="cast">
+      <div className="cast-name">{results.name}</div>
+      <div className="cast-image">
+        <img src={results.image} alt="characterImage" />
       </div>
-    );
-  });
+    </div>
+  );
 
-  const castStatus = results.filter((castStat) => {
-    let { id, status } = castStat;
-    return (
-      <div key={id} className="status">
-        {status}
-      </div>
-    );
-  });
+  const castStatus = (
+    <div className="status">
+      {results.status}
+    </div>
+  );
 
-  const castSpecies = results.filter((castSpcies) => {
-    let { id, species } = castSpcies;
-    return (
-      <div key={id} className="status">
-        {species}
-      </div>
-    );
-  });
+  const castSpecies = (
+    <div className="status">
+      {results.species}
+    </div>
+  );
 
-  const castGender = results.filter((castGndr) => {
-    let { id, gender } = castGndr;
-    return (
-      <div key={id} className="status">
-        {gender}
-      </div>
-    );
-  });
+  const castGender = (
+    <div className="status">
+      {results.gender}
+    </div>
+  );
 
-  const castOrigin = results.filter((castOrgn) => {
-    let { id, origin } = castOrgn;
-    return (
-      <div key={id} className="status">
-        {origin}
-      </div>
-    );
-  });
+  const castOrigin = (
+    <div className="status">
+      {results.origin.name}
+    </div>
+  );
 
-  const castLocation = results.filter((castLctn) => {
-    let { id, location } = castLctn;
-    return (
-      <div key={id} className="status">
-        {location}
-      </div>
-    );
-  });
+  const castLocation = (
+    <div className="status">
+      {results.location.name}
+    </div>
+  );
 
-  const castEpisodes = results.filter((castEpsd) => {
-    let { id, episode } = castEpsd;
-    return (
-      <div key={id} className="status">
-        {episode}
-      </div>
-    );
-  });
+  // const castEpisodes = results.episode.map((episode, i) => (
+  //   <div key={i} className="status">
+  //     {episode}
+  //   </div>
+  // ));
 
   return (
     <div className="CastDetails-container">
@@ -100,11 +81,11 @@ const CastDetailsInfo = ({ results }) => {
           <div className="title">Last Known Location</div>
           {castLocation}
         </div>
-        <div className="cast-episodes section-desc white">
+        {/* <div className="cast-episodes section-desc white">
           <div className="icon">icon</div>
           <div className="title">Episode(s)</div>
           <div className="status">{castEpisodes}</div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
